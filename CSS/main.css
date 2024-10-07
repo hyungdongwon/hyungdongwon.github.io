@@ -1,0 +1,54 @@
+
+.profile{
+    width: 110px; 
+    display:block; 
+    margin-left:auto; 
+    margin-right: auto; 
+    margin-top:30px;
+}
+.subject{
+    text-align: center;
+
+}
+.title{
+    font-weight: 600; 
+    text-align: center; 
+    margin-top: -10px;
+}
+.text{
+    text-align: center; 
+    color:white; 
+    font-family: 'gulim';
+}
+.container{
+    width:800px;
+}
+.header{
+    width:100%;
+    height:100px;
+    background-color: aquamarine;
+}
+.left-menu{
+    width: 20%;
+    height: 400px;
+    background-color: cornflowerblue;
+    display: inline-block;
+    vertical-align: top;
+    /* inline-block은 글씨가들어가면 발작할수있음. */
+    /* vertical-align = 공책밑줄을 위로올리는 느낌? */
+    /* float:left; */
+}
+.content{
+  width:80%;
+  height: 400px;
+  background-color: coral;
+  display: inline-block;
+  /* float:right; */
+}
+.footer{
+    width:100%;
+    height:100px;
+    background-color: grey;
+
+    /* clear:both; */
+}

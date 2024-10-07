@@ -1,0 +1,130 @@
+div{
+    box-sizing: border-box;
+}
+body{
+    margin:0px;
+}
+
+td,th{
+    border: 1px solid skyblue;
+    height:30px;
+    color: rgb(118, 200, 232);
+    border-right:none;
+    border-left:none; 
+}
+table{
+    border-collapse: collapse;
+    /*테이블사이 간격없애기*/
+    width:100%;
+}
+.main-background{
+    width:950px;
+    height:650px;
+    background-color: rgb(156, 190, 204);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding:90px;
+}
+.header{
+    /* background-color: bisque; */
+    width:100%;
+    margin-top:-70px;
+    color: #191970;
+    font-size: 28px;
+    font-weight: 550;    
+}
+.shopping-list{
+    background-color: white;
+    width: 100%;
+    height:330px;
+    border-radius: 8px;
+}
+.tag{
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+.tag2 img{
+    width:100px;
+    float:left;
+}
+.tag2 p{
+    float:left;
+    font-size: 20px;
+    font-weight: 900;
+    color:black;
+}
+.tag2 span{
+    color:skyblue;
+    font-size: 18px;
+    font-weight: 600;
+}
+.total{
+    width:100%;
+    display: flex;
+    justify-content: right;
+}
+.total p{
+    margin-right:40px;
+    font-size:22px;
+    font-weight: 700;
+    color:navy;
+}
+.edit{
+    margin-top: 30px;
+    display: flex;
+}
+.edit a{
+    color: navy;
+    font-weight: 600;
+    font-size:18px;
+}
+.edit button{
+    margin-left: auto;
+    padding:28px;
+    width:270px;
+    background-color: rgb(32, 32, 105);
+    border:none;
+    border-radius: 5px;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+/* 버튼에 마우스를 두었을떄 */
+.edit button:hover{
+    background-color: antiquewhite;
+}
+/* 커서찍혀있을때  */
+.edit button:focus{
+    background-color: gray;
+}
+/* 버튼에 클릭중일때 액션*/
+.edit button:active{
+    background-color: brown;
+}
+/* hover focus active 넣을땐 순서가 중요!! */
+.input-test{
+    font-size: 20px;
+}
+.input-test:focus{
+    border:3px solid red;
+}
+.custom-link{
+    text-decoration: none;
+    /* 링크밑줄제거 */
+}
+/* 방문전 링크 스타일 :link */
+.custom-link:link{
+    color:yellow;
+}
+/* 방문후 링크 스타일 :visited */
+.custom-link:visited{
+    color:green;
+}
+
+/* 
+.tag2 th:nth-child(2){
+    width:400px;
+}
+th:nth-child(2)가뭐냐면 두번째로 나오는 th를 의미한다.
+*/

@@ -1,0 +1,21 @@
+/* 한글폰트는 용량이너무커서 많이사용은X 웹용 woff형태를 쓰자. */
+@font-face {
+    font-family: '이쁜폰트';
+    src: url(../font/NanumSquareR.woff);
+}
+@font-face{
+    font-family: '굵은폰트';
+    src:url(../font/NanumSquareB.woff);
+    font-weight: 900;
+}
+body{
+    font-family: '이쁜폰트';
+}
+/* 폰트파일을 호스팅해주는 Google Fonts */
+
+/* 가끔 폰트가 깨질때가있는데 부드럽게 처리하는방법 */
+p,h4,h3,h2,h2,span{
+    transform: rotate(0.03deg);
+    /* 이건 요소들을 회전시켜주는데 아주조금회전시키면 깨짐이해결됨 
+    왜그런지는 몰루... */
+}

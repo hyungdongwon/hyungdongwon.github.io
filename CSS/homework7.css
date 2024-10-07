@@ -1,0 +1,162 @@
+@font-face {
+    font-family: '굵은폰트';
+    src: url(/font/NanumSquareB.woff);
+}
+@font-face {
+    font-family: '기본폰트';
+    src: url(/font/NanumSquareR.woff);
+}
+
+body,html{
+    background-color: #f7f9fc;
+}
+div{
+    box-sizing: border-box;
+    /* border:1px solid black; */
+    font-family: '굵은폰트';
+}
+button{ 
+    font-family: '굵은폰트';
+    width:110px;
+    height:38px;
+    background-color: #6fbaf8;
+    border:none;
+    border-radius: 5px;
+    color:white;
+}
+.container{
+    width:60%;
+}
+.profile{   
+    height: 250px;
+    background-color: white;
+    margin-top: 60px;
+}
+/* 프로필 왼쪽 */
+.profile-left{
+    width:60%;
+    display: flex;
+}
+.profile-text{
+    margin-top: 8px;
+}
+.profile-text p{
+    margin: 0px;
+    font-family: '굵은폰트';
+    letter-spacing: -1px;
+    margin-bottom: 5px;
+}
+.profile-text p:nth-child(1){
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+.profile-text p:nth-child(3){
+    color: #6fbaf8;
+}
+.profile-text p:nth-child(3) i{
+    font-size: 20px;
+}
+
+/* 프로필 오른쪽 세로라인 */
+.vertical-line {
+    border-left: 2px solid #d4dae3; /* 왼쪽에 세로줄 추가 */
+    height: 170px; /* 세로줄의 높이 */
+    margin-left:50px;
+}
+
+/* 프로필 오른쪽 */
+.profile-right{
+    margin-left:55px;
+    width:30%;
+    font-family: '굵은폰트';
+}
+.profile-right div{
+    padding:5px;
+}
+/* profile 태그 */
+.profile-tag{
+    color: #6fbaf8;
+    margin-left: 28px;
+    font-family: '굵은폰트';
+    font-size: 24px;
+}
+.profile-info{
+    width:100%;
+    height:600px;
+    margin-top:20px;
+}
+.line{
+    margin: auto;
+    width:95%;
+}
+.line hr{
+    height:2px;
+}
+
+.Skill-text p{
+    border:1px solid black;
+}
+.card-text span{
+    border:1px solid #d4dae3;
+    margin:3px;
+    padding:10px;
+    border-radius: 100px;
+}
+
+.profile-info-right{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.profile-info-right2 {
+    flex-direction: column;
+    transform: scale(0.45); /* 요소 크기를 80%로 줄임 */
+    transform-origin: top left; /* 기준점을 설정 (optional) */
+    background-color: none;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        width:80%;
+    }
+    .vertical-line {
+        border:none;
+        width:100%;
+    }
+    .profile{
+        flex-direction: column;
+        height:100%;
+    }
+    .profile-left{
+        width:100%;
+    }
+    .profile-right{
+        margin-top:-150px;
+        width:100%;
+        padding:40px;   
+    }
+
+    .works{
+        height: 25%;
+    }
+
+    .hh .line{
+        color:white
+    }
+    .hi{
+        opacity: 0;
+    }
+    .skills{
+        height:200px;
+    }
+    .card-text span{
+        display: inline-block;
+        border:1px solid #d4dae3;
+        margin:3px;
+        padding:10px;
+        border-radius: 100px;
+    }
+
+}

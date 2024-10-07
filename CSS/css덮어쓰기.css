@@ -1,0 +1,38 @@
+.custom{
+    color:red;
+}
+/* 같은 클래스면 더밑에있는게 우선적용됨! */
+/* 그래서 media 쿼리도 제일밑에 작성하는것 */
+.custom{
+    /* 애들은 10점정도 */
+    color:skyblue;
+}
+/* 아니면 우선순위를높인다 class명말고 id로 지정을해주면될듯?*/
+/* 하지만 비추 */
+.id{
+    color:blueviolet;
+}
+.custom{
+    color:blue !important;
+    /* 이건 !important 이거는 거의 최우선으로 적용한다고보면됨 */
+}
+/* specificity 점수 높이기 */
+.div1 .custom{
+    /* 이게한 20점이라고 치면 */
+    color:aquamarine;
+}
+div.div1 .custom{
+    color:brown;
+    /* 이게한 21점 */
+}
+div.div1 p.custom{
+    /* 이게한22점 ㅋㅋㅋ */
+    color:black;
+}
+/* Bootstrap 사용시 덮으쓰기는? */
+/* 내가만든 class 를 추가하면 그거 우선적으로 적용해줄거임! */
+
+/* 좋은코드들의 원칙!!! */
+/* 1.나중에 수정/관리가 쉬우면 항상 좋은코드! */
+/* 2. 확장성이 좋으면 좋은코드 (재활용이가능한지)  */
+/* 3. 양이 적으면 좋긴한데(선택사항) */

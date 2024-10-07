@@ -1,0 +1,21 @@
+/* pesudo는 태그내 일정부분만을 스타일링하는것 */
+/* shadow는 보이지않는부분(개발자편의를위해)input타입의 글자부분이나 버튼 */
+/* -webkit은 크롬,사파리,Edge에서만 적용되는 스타일 */
+.input-file[type=file]::-webkit-file-upload-button{
+    background-color: skyblue;
+    border:none;
+}
+/* 보통파일타입의 input을만들때에는 라벨을주고 기존input은 display:none를준다 */
+input::-webkit-input-placeholder{
+    color:red;
+}
+input[type=range]::-webkit-slider-runnable-track{
+    
+}
+input[type=range]::-webkit-slider-thumb {
+    /* 브라우저 기본 CSS안보이게 */
+    appearance: none;
+    background-color: red;
+    width:50px;
+    height:50px;
+}
